@@ -93,7 +93,7 @@ a {
 }
 
 .hero {
-  background-image: url(../images/hero-background.jpg);
+  background-image: url(/resources/images/hero-background.jpg);
   height: 30vh;
   background-position: center;
   display: flex;
