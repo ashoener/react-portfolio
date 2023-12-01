@@ -7,9 +7,12 @@ function App(props) {
   return (
     <>
       <Navbar />
-      <div className="portfolio-items">
+      <main>
+        <section class="hero">
+          <h2>Portfolio</h2>
+        </section>
         {props.outlet ? props.outlet : <Outlet />}
-      </div>
+      </main>
     </>
   );
 }
