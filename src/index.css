@@ -52,7 +52,11 @@ a {
   flex: 1 0 0;
 }
 
-.navbar-header-container h1 {
+.navbar-header-container a {
+  color: var(--text-icons);
+}
+
+.navbar-header-container a h1 {
   background-color: var(--dark-primary-color);
   width: fit-content;
   padding: 10px 0;
