@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
+
 export default ({ showLinks }) => {
   return (
     <nav className={"navbar-links-container" + (showLinks ? "active" : "")}>
       <ul className="navbar-links">
         <li>
-          <a href="#about-me">About Me</a>
+          <Link to="/about">About Me</Link>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <Link to="/work">Work</Link>
         </li>
         <li>
-          <a href="#contact">Contact Me</a>
+          <Link to="/contact">Contact Me</Link>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <Link to="/resume">Resume</Link>
         </li>
       </ul>
     </nav>
