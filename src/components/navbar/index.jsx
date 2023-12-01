@@ -1,14 +1,17 @@
+import { useState } from "react";
 import MenuIcon from "./MenuIcon.jsx";
 
 export default () => {
+  const [showLinks, setShowLinks] = useState(false);
+
   return (
-    <header class="navbar">
-      <div class="navbar-header-container">
+    <header className="navbar">
+      <div className="navbar-header-container">
         <h1>Andrew Shoener</h1>
         <MenuIcon></MenuIcon>
       </div>
-      <nav class="navbar-links-container">
-        <ul class="navbar-links">
+      <nav className={"navbar-links-container" + (showLinks ? "active" : "")}>
+        <ul className="navbar-links">
           <li>
             <a href="#about-me">About Me</a>
           </li>
