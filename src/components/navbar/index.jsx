@@ -1,16 +1,11 @@
+import MenuIcon from "./MenuIcon.jsx";
+
 export default () => {
   return (
     <header class="navbar">
       <div class="navbar-header-container">
         <h1>Andrew Shoener</h1>
-        <div
-          class="menu-icon"
-          onclick="document.getElementsByClassName('navbar-links-container')[0].classList.toggle('active')"
-        >
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <MenuIcon></MenuIcon>
       </div>
       <nav class="navbar-links-container">
         <ul class="navbar-links">
