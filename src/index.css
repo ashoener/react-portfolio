@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Colors from https://www.materialpalette.com/blue-grey/blue */
+:root {
+  --dark-primary-color: #455a64;
+  --light-primary-color: #cfd8dc;
+  --primary-color: #607d8b;
+  --text-icons: #ffffff;
+  --accent-color: #448aff;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --divider-color: #bdbdbd;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  flex: 0 0 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.navbar-header-container {
+  color: var(--text-icons);
+  text-align: left;
+  flex: 1 0 0;
+}
+
+.navbar-header-container h1 {
+  background-color: var(--dark-primary-color);
+  width: fit-content;
+  padding: 10px 0;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.navbar-links-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 0 0;
+  padding-right: 20px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links li {
+  padding: 5px 0;
+  margin: 0 5px;
+}
+
+.navbar-links li a {
+  color: var(--light-primary-color);
+  padding: 5px 10px;
+  border-bottom: 3px solid var(--dark-primary-color);
+}
+
+.navbar-links li a:hover {
+  color: var(--text-icons);
+  border-color: var(--light-primary-color);
+}
+
+.hero {
+  background-image: url(../images/hero-background.jpg);
+  height: 30vh;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero h2 {
+  margin-right: 50px;
+  margin-bottom: 30px;
+  background-color: var(--dark-primary-color);
+  padding: 8px;
+  color: var(--text-icons);
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1% 5%;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.portfolio-item-header {
+  flex: 1 0 10%;
+  text-align: right;
+  padding-right: 20px;
+  color: var(--dark-primary-color);
+  border-right: 3px solid var(--dark-primary-color);
+  margin-right: 10px;
+}
+
+.portfolio-item-content {
+  flex: 9 0 0;
+  color: var(--primary-text);
+}
+
+.portfolio-item-content p {
+  margin-bottom: 10px;
+}
+
+.portfolio-item-content p:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-work-card {
+  position: relative;
+  flex: 0 0 49.5%;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: none;
+  border: 5px solid var(--dark-primary-color);
+  box-sizing: border-box;
+}
+
+.portfolio-work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.portfolio-work-card .work-card-overlay {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: var(--dark-primary-color);
+  opacity: 0.3;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.portfolio-work-card:hover .work-card-overlay {
+  opacity: 0;
+}
+
+.portfolio-work-card figcaption {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  color: var(--text-icons);
+  background-color: var(--dark-primary-color);
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.portfolio-work-card figcaption h3 {
+  margin-bottom: 5px;
+}
+
+#primary-work-card {
+  flex: 0 0 100%;
+  height: 350px;
+}
+
+#primary-work-card img {
+  object-position: 0 0;
+}
+
+.contact-links-container {
+  padding: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.contact-links li {
+  margin: 0 5px;
+}
+
+.contact-links li a {
+  color: var(--primary-text);
+  padding: 5px 10px;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.contact-links li a:hover {
+  border-color: var(--accent-color);
+}
+
+/* @media screen and (max-width: 992px) {
+} */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar-header-container {
+    background-color: var(--dark-primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-header-container h1 {
+    padding: 10px;
+  }
+
+  /* Credit: https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+  .menu-icon {
+    display: inline;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .menu-icon > * {
+    width: 35px;
+    height: 5px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+  }
+
+  .navbar-links-container {
+    justify-content: center;
+    padding: 0 0;
+    padding-bottom: 5px;
+    display: none;
+  }
+
+  .navbar-links-container.active {
+    display: initial;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-links li {
+    margin: 5px 0;
+  }
+
+  .hero {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    margin: 0;
+    padding: 8px 20px;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+  .portfolio-item-header {
+    text-align: center;
+    border-right: none;
+    border-bottom: 3px solid var(--dark-primary-color);
+    margin-right: 0;
+    padding-right: 0;
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-work-card {
+    flex: 0 0 100%;
+  }
+
+  .portfolio-work-card figcaption {
+    bottom: 0;
+    width: 100%;
+  }
+
+  #primary-work-card {
+    height: 200px;
+  }
+
+  .contact-links-container {
+    padding: 0 0;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-links li {
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+}
