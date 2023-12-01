@@ -9,7 +9,7 @@ export default () => {
     <header className="navbar">
       <div className="navbar-header-container">
         <h1>Andrew Shoener</h1>
-        <MenuIcon action={() => setShowLinks(!showLinks)}></MenuIcon>
+        <MenuIcon action={() => setShowLinks(!showLinks)} />
       </div>
       <LinksContainer showLinks={showLinks}></LinksContainer>
     </header>
