@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-import Card from "../components/work/Card.jsx";
+import Card from "../components/portfolio/Card.jsx";
 
 import movieTime from "/resources/images/movie-time.png";
 import travelEats from "/resources/images/travel-eats.png";
