@@ -25,18 +25,6 @@ const cards = [
     subtitle: "HTML/CSS",
     image: landingPage,
   },
-  {
-    link: "",
-    title: "Placeholder",
-    subtitle: "Lang/Lang",
-    image: "https://placehold.co/600x300",
-  },
-  //   {
-  //     link: "#",
-  //     title: "Placeholder",
-  //     subtitle: "Lang/Lang",
-  //     image: "https://placehold.co/600x300",
-  //   },
 ];
 if (!(cards.length & 1)) {
   cards.push({
