@@ -38,6 +38,7 @@ if (!(cards.length & 1)) {
 }
 
 export default memo(() => {
+  document.title = "Andrew Shoener | Portfolio";
   return (
     <div className="portfolio-items">
       <section id="work" className="portfolio-item">

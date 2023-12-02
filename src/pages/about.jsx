@@ -1,6 +1,7 @@
 import { memo } from "react";
 
 export default memo(() => {
+  document.title = "Andrew Shoener | About Me";
   return (
     <div className="portfolio-items">
       <section id="about-me" className="portfolio-item">
