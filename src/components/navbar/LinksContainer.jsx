@@ -8,7 +8,7 @@ export default ({ showLinks }) => {
           <NavLink to="/">About Me</NavLink>
         </li>
         <li>
-          <NavLink to="/work">Work</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
         </li>
         <li>
           <NavLink to="/contact">Contact</NavLink>

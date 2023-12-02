@@ -52,7 +52,7 @@ export default memo(() => {
     <div className="portfolio-items">
       <section id="work" className="portfolio-item">
         <header className="portfolio-item-header">
-          <h1>Work</h1>
+          <h1>Portfolio</h1>
         </header>
         <article className="portfolio-item-content">
           <div className="portfolio-work-cards">
