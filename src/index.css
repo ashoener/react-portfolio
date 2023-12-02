@@ -92,6 +92,11 @@ a {
   border-color: var(--light-primary-color);
 }
 
+.navbar-links li a.active {
+  color: var(--text-icons);
+  border-color: var(--accent-color);
+}
+
 .hero {
   background-image: url(/resources/images/hero-background.jpg);
   height: 30vh;
