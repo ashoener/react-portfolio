@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default ({ showLinks }) => {
   return (
     <nav className={"navbar-links-container" + (showLinks ? "active" : "")}>
       <ul className="navbar-links">
         <li>
-          <Link to="/">About Me</Link>
+          <NavLink to="/">About Me</NavLink>
         </li>
         <li>
-          <Link to="/work">Work</Link>
+          <NavLink to="/work">Work</NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact Me</Link>
+          <NavLink to="/contact">Contact Me</NavLink>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <NavLink to="/resume">Resume</NavLink>
         </li>
       </ul>
     </nav>
