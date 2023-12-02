@@ -11,7 +11,7 @@ export default ({ showLinks }) => {
           <NavLink to="/work">Work</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact Me</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
           <NavLink to="/resume">Resume</NavLink>
