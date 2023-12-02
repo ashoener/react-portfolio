@@ -26,6 +26,8 @@ const cards = [
     image: landingPage,
   },
 ];
+
+// Add a placeholder card if there's an even number of cards
 if (!(cards.length & 1)) {
   cards.push({
     link: "",
