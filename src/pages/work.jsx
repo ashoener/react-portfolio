@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 import Card from "../components/work/Card.jsx";
 
 import movieTime from "/resources/images/movie-time.png";
@@ -24,20 +26,28 @@ const cards = [
     image: landingPage,
   },
   {
-    link: "#",
+    link: "",
     title: "Placeholder",
     subtitle: "Lang/Lang",
     image: "https://placehold.co/600x300",
   },
-  {
-    link: "#",
-    title: "Placeholder",
-    subtitle: "Lang/Lang",
-    image: "https://placehold.co/600x300",
-  },
+  //   {
+  //     link: "#",
+  //     title: "Placeholder",
+  //     subtitle: "Lang/Lang",
+  //     image: "https://placehold.co/600x300",
+  //   },
 ];
+if (!(cards.length & 1)) {
+  cards.push({
+    link: "",
+    title: "Placeholder",
+    subtitle: "Lang/Lang",
+    image: "https://placehold.co/600x300",
+  });
+}
 
-export default () => {
+export default memo(() => {
   return (
     <div className="portfolio-items">
       <section id="work" className="portfolio-item">
@@ -54,4 +64,4 @@ export default () => {
       </section>
     </div>
   );
-};
+});

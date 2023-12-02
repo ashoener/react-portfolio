@@ -4,7 +4,11 @@ export default ({ card, index: i }) => {
       className="portfolio-work-card"
       id={i === 0 ? "primary-work-card" : ""}
     >
-      <a href={card.link} target="_blank">
+      <a
+        href={card.link}
+        target="_blank"
+        onClick={(e) => card.link === "" && e.preventDefault()}
+      >
         <img src={card.image} alt={card.title} />
       </a>
       <figcaption>

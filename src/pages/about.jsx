@@ -1,4 +1,6 @@
-export default () => {
+import { memo } from "react";
+
+export default memo(() => {
   return (
     <div className="portfolio-items">
       <section id="about-me" className="portfolio-item">
@@ -28,4 +30,4 @@ export default () => {
       </section>
     </div>
   );
-};
+});
