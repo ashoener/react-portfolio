@@ -1,6 +1,8 @@
 import Card from "../components/work/Card.jsx";
 
 import movieTime from "/resources/images/movie-time.png";
+import travelEats from "/resources/images/travel-eats.png";
+import landingPage from "/resources/images/landing-page.png";
 
 const cards = [
   {
@@ -8,6 +10,30 @@ const cards = [
     title: "Movie Time",
     subtitle: "Express/MySQL/Timeline.js",
     image: movieTime,
+  },
+  {
+    link: "https://ashoener.github.io/travel-eats/",
+    title: "Travel Eats",
+    subtitle: "HTML/CSS/JS",
+    image: travelEats,
+  },
+  {
+    link: "https://ashoener.github.io/landing-page/",
+    title: "Landing Page",
+    subtitle: "HTML/CSS",
+    image: landingPage,
+  },
+  {
+    link: "#",
+    title: "Placeholder",
+    subtitle: "Lang/Lang",
+    image: "https://placehold.co/600x300",
+  },
+  {
+    link: "#",
+    title: "Placeholder",
+    subtitle: "Lang/Lang",
+    image: "https://placehold.co/600x300",
   },
 ];
 
@@ -21,7 +47,7 @@ export default () => {
         <article className="portfolio-item-content">
           <div className="portfolio-work-cards">
             {cards.map((card, i) => (
-              <Card card={card} index={i} key={card.title} />
+              <Card card={card} index={i} key={i} />
             ))}
           </div>
         </article>
