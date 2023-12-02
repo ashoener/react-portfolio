@@ -37,7 +37,7 @@ if (!(cards.length & 1)) {
   });
 }
 
-export default memo(() => {
+export default memo(function Portfolio() {
   document.title = "Andrew Shoener | Portfolio";
   return (
     <div className="portfolio-items">

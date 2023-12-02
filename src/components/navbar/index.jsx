@@ -3,7 +3,7 @@ import MenuIcon from "./MenuIcon.jsx";
 import LinksContainer from "./LinksContainer.jsx";
 import { Link } from "react-router-dom";
 
-export default () => {
+export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
@@ -17,4 +17,4 @@ export default () => {
       <LinksContainer showLinks={showLinks}></LinksContainer>
     </header>
   );
-};
+}

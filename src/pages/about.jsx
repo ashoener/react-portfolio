@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-export default memo(() => {
+export default memo(function About() {
   document.title = "Andrew Shoener | About Me";
   return (
     <div className="portfolio-items">

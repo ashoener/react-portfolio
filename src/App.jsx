@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { Outlet } from "react-router-dom";
 
 import Navbar from "./components/navbar";
@@ -17,5 +19,9 @@ function App(props) {
     </>
   );
 }
+
+App.propTypes = {
+  outlet: PropTypes.element.isRequired,
+};
 
 export default App;

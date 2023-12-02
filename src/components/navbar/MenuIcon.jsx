@@ -1,4 +1,6 @@
-export default ({ action }) => {
+import PropTypes from "prop-types";
+
+export default function MenuIcon({ action }) {
   return (
     <div className="menu-icon" onClick={action}>
       <div></div>
@@ -6,4 +8,8 @@ export default ({ action }) => {
       <div></div>
     </div>
   );
+}
+
+MenuIcon.propTypes = {
+  action: PropTypes.func.isRequired,
 };

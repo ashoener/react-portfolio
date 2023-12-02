@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
+
 import { NavLink } from "react-router-dom";
 
-export default ({ showLinks }) => {
+export default function LinksContainer({ showLinks }) {
   return (
     <nav className={"navbar-links-container" + (showLinks ? "active" : "")}>
       <ul className="navbar-links">
@@ -19,4 +21,8 @@ export default ({ showLinks }) => {
       </ul>
     </nav>
   );
+}
+
+LinksContainer.propTypes = {
+  showLinks: PropTypes.bool.isRequired,
 };
