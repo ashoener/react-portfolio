@@ -1,0 +1,5 @@
+{
+  "subdomain": "portfolio",
+  "install": "bun install && bun run build",
+  "start": "bun preview"
+}
