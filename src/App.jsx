@@ -8,7 +8,7 @@ function App(props) {
     <>
       <Navbar />
       <main>
-        <section class="hero">
+        <section className="hero">
           <h2>Portfolio</h2>
         </section>
         {props.outlet ? props.outlet : <Outlet />}
