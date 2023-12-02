@@ -5,7 +5,7 @@ export default ({ showLinks }) => {
     <nav className={"navbar-links-container" + (showLinks ? "active" : "")}>
       <ul className="navbar-links">
         <li>
-          <Link to="/about">About Me</Link>
+          <Link to="/">About Me</Link>
         </li>
         <li>
           <Link to="/work">Work</Link>
