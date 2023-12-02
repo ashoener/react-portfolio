@@ -1,5 +1,5 @@
 {
   "subdomain": "portfolio",
   "install": "bun install && bun run build",
-  "start": "bunx vite preview"
+  "start": "bun server.js"
 }
