@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import ErrorPage from "./pages/error";
 import About from "./pages/about.jsx";
+import Work from "./pages/work.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <About />,
+      },
+      {
+        path: "/work",
+        element: <Work />,
       },
     ],
   },
