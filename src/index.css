@@ -97,6 +97,16 @@ a {
   border-color: var(--accent-color);
 }
 
+.footer {
+  margin-top: auto;
+  background-color: var(--primary-color);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-icons);
+}
+
 .hero {
   background-image: url(/resources/images/hero-background.jpg);
   height: 30vh;
